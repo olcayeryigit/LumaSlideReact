@@ -1,0 +1,95 @@
+#slider canvas {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  overflow: hidden !important;
+}
+
+#slider-content .slider-t {
+  font-family: "Lexend", sans-serif;
+}
+
+#slider-content span {
+  display: none;
+}
+
+#slider-content #slide-status {
+  font-family: "Lexend", sans-serif;
+}
+
+#slider-content .meta {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+}
+#slider-content .meta {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+}
+
+#slider-content .meta:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: -55px;
+  width: 45px;
+  height: 2px;
+  background-color: #393d40;
+}
+
+#pagination {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30px;
+  z-index: 50 !important;
+}
+#pagination button {
+  display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  border-radius: 100%;
+  padding: 0;
+  margin: 30px 0;
+  cursor: pointer;
+  position: relative;
+  opacity: 0.2;
+  transition: opacity 0.2s ease-in-out;
+  outline: none;
+  z-index: 50 !important;
+}
+#pagination button:hover {
+  opacity: 0.5;
+}
+#pagination button.active {
+  opacity: 1;
+}
+#pagination button.active:before {
+  width: 300%;
+  height: 300%;
+  opacity: 1;
+}
+#pagination button:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out, width 0.4s ease-in-out,
+    height 0.4s ease-in-out;
+}
