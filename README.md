@@ -1,5 +1,3 @@
-![Ziyaretçi Sayacı](https://komarev.com/ghpvc/?repo=LumaSlideReact&color=red)
-
 # LumaSlide - React Library
 
 **LumaSlide** is a modern, creative slider/animation component library built with React. It includes four unique transition effects:
