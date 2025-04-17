@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap");
 
 :root {
-  --slide-width: min(25vw, 300px);
+  --slide-width: min(30vw, 300px);
   --slide-aspect: 2 / 3;
 
   --slide-transition-duration: 800ms;
@@ -248,7 +248,7 @@
 
   position: absolute;
   height: fit-content;
-  left: -15%;
+  left: -10%;
   bottom: 15%;
   transform: translateZ(var(--z-offset));
   z-index: 2;

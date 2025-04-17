@@ -8,10 +8,11 @@ function App() {
     <div className="">
       {/* 
       <Flux />
-      <PixelMorph />
-<Perspective />
+        <PixelMorph />
+      <Perspective />
+  <DualPanel />
        */}
-      <DualPanel />
+      <Flux />
     </div>
   );
 }
