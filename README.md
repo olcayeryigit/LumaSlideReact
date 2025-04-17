@@ -24,24 +24,6 @@ npm run dev
 
 Each slider effect is modular and can be imported individually:
 
-```jsx
-import DualPanel from "./dual-panel/DualPanel";
-import Flux from "./flux/Flux";
-import Perspective from "./perspective/Perspective";
-import PixelMorph from "./pixel-morph/PixelMorph";
-
-function App() {
-  return (
-    <div>
-      <PixelMorph />
-      <Perspective />
-      <DualPanel />
-      <Flux />
-    </div>
-  );
-}
-```
-
 > Note: For cleaner output, use only one slider at a time while testing.
 
 ## 🔌 Integrating the Slider Component into Your Project
