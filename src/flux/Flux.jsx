@@ -65,7 +65,7 @@ const Flux = () => {
   };
 
   return (
-    <main className=" flux-slider z-50 overflow-hidden relative w-full h-[48rem] md:h-[40rem] shadow-lg container mx-auto border-t-2 border-gray-200 ">
+    <main className=" flux-slider z-50 overflow-hidden relative w-full h-[48rem] md:h-[40rem] shadow-lg container mx-auto border-t-2 border-gray-300 ">
       <ul
         className="flux-slider transition-all duration-500 ease-in-out"
         ref={sliderRef}
@@ -73,7 +73,7 @@ const Flux = () => {
         {items.map((item, index) => (
           <li
             key={index}
-            className="flux-slider-item w-24 h-36  lg:w-36 lg:h-44  xl:w-40 xl:h-50 list-none absolute bottom-52  lg:top-3/5 xl:bottom-40 transform -translate-y-1 z-10 bg-center bg-cover rounded-2xl  transition-all duration-500 ease-in-out border-2 border-gray-200 shadow-3xl  "
+            className="flux-slider-item w-24 h-36  lg:w-36 lg:h-44  xl:w-40 xl:h-50 list-none absolute bottom-52  lg:top-3/5 xl:bottom-40 transform -translate-y-1 z-10 bg-center bg-cover rounded-2xl  transition-all duration-500 ease-in-out border-2 border-gray-300 shadow-3xl  "
             style={{ backgroundImage: item.backgroundImage }}
           >
             <div className="text-shadow-black flux-slider-content absolute top-1/3 lg:top-1/2 left-6 lg:left-12 transform -translate-y-1/2 font-normal text-white opacity-0 hidden min-w-[30vw] max-w-[375px] text-base leading-relaxed transition-opacity duration-700 ease-in-out p-2 ">

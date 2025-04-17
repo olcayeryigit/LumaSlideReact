@@ -7,12 +7,11 @@ function App() {
   return (
     <div className="">
       {/* 
-      <Flux />
-        <PixelMorph />
+      <PixelMorph />
       <Perspective />
-  <DualPanel />
-       */}
+      <DualPanel />
       <Flux />
+       */}
     </div>
   );
 }

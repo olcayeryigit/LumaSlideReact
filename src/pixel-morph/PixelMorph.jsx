@@ -184,7 +184,7 @@ const PixelMorph = () => {
       <main className="relative w-full h-[33rem] md:h-[36rem] overflow-hidden ">
         <div
           id="slider"
-          className="w-full h-[38rem] md:h-[40rem] max-w-[950px] relative mx-auto overflow-hidden border border-gray-800  shadow-2xl  "
+          className="w-full h-[38rem] md:h-[40rem] max-w-[950px] relative mx-auto overflow-hidden  shadow-2xl  "
         >
           <div className="slider-inner relative flex items-center max-w-[1200px] h-full z-10 overflow-hidden">
             <div id="slider-content" className="px-4 md:px-10">

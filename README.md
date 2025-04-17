@@ -1,12 +1,85 @@
-# React + Vite
+# LumaSlide - ReactLibrary
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**LumaSlide** is a modern, creative slider/animation component library built with React. It includes four unique transition effects:
 
-Currently, two official plugins are available:
+- 🧩 `DualPanel`
+- 🌊 `Flux`
+- 🔮 `Perspective`
+- 🟣 `PixelMorph`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+These reusable components are designed to enhance your UI with smooth and stylish transitions.
 
-## Expanding the ESLint configuration
+## 🔧 Installation
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Clone the repository:
+
+```bash
+git clone https://github.com/olcayeryigit/LumaSlideReact.git
+cd luma-react
+npm install
+npm run dev
+```
+
+## 📦 Usage
+
+Each slider effect is modular and can be imported individually:
+
+```jsx
+import DualPanel from "./dual-panel/DualPanel";
+import Flux from "./flux/Flux";
+import Perspective from "./perspective/Perspective";
+import PixelMorph from "./pixel-morph/PixelMorph";
+
+function App() {
+  return (
+    <div>
+      <PixelMorph />
+      <Perspective />
+      <DualPanel />
+      <Flux />
+    </div>
+  );
+}
+```
+
+> Note: For cleaner output, use only one slider at a time while testing.
+
+## 🔌 Integrating the Slider Component into Your Project
+
+Copy the folder of the slider type you want to use into the `src/components` directory of your React project. If the `components` folder doesn't exist, simply create one.
+
+Example folder structure:
+
+```
+src/
+└── components/
+    └── dual-panel
+```
+
+Then, import the component into your `App.jsx` (or any other component file where you want to use it) like this:
+
+```jsx
+import DualPanel from "./components/dual-panel/DualPanel";
+
+function App() {
+  return (
+    <div>
+      <DualPanel />
+    </div>
+  );
+}
+```
+
+> 🔔 **Note:** You only need to include the folder of the specific slider effect you want to use. Each slider works independently, so you can use a single type throughout the project or assign different sliders to different pages.
+
+## ⚙️ Tech Stack
+
+- ⚡ Vite
+
+## 💡 Contributing
+
+Contributions are welcome! Fork, branch, code and open a Pull Request 🚀
+
+## 📄 License
+
+MIT License
