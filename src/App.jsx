@@ -4,19 +4,20 @@ import DualPanel from "./sliders/dual-panel/DualPanel";
 import FlatPager from "./paginations/flat-pager/FlatPager";
 import Boost from "./navigations/Boost/Boost";
 import Elegant from "./paginations/elegant-pagination/Elegant";
+import DotGlide from "./paginations/dot-glide/DotGlide";
 
 function App() {
   return (
     <div className="">
       {/*
         <Flux />
-  
-    <Perspective />
+        <Perspective />
         <DualPanel />
-       <Boost />
-        <FlatPager />  
+        <Boost />
+        <FlatPager />
         <Elegant />
-       */}
+         <DotGlide />
+       */}{" "}
     </div>
   );
 }

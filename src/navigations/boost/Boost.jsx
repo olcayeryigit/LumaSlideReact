@@ -1,11 +1,27 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import "./assets/css/style.css";
 
 const Boost = () => {
+  const [activeSlide, setActiveSlide] = useState(0);
+
+  const slides = ["Slide 1 Content", "Slide 2 Content", "Slide 3 Content"];
+
+  const goToNextSlide = () => {
+    setActiveSlide((prev) => (prev + 1) % slides.length);
+  };
+
+  const goToPrevSlide = () => {
+    setActiveSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  };
+
   return (
     <div className="boost-container">
-      {" "}
-      <div className="boost-button-prev boost-button">
+      <div className="boost-content">
+        <div className="boost-slide">{slides[activeSlide]}</div>
+      </div>
+
+      <div className="boost-button-prev boost-button" onClick={goToPrevSlide}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 350 160 90">
           <g className="boost-svg-wrap">
             <g className="boost-svg-circle-wrap">
@@ -19,7 +35,8 @@ const Boost = () => {
           </g>
         </svg>
       </div>
-      <div className="boost-button-next boost-button">
+
+      <div className="boost-button-next boost-button" onClick={goToNextSlide}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 350 160 90">
           <g className="boost-svg-wrap">
             <g className="boost-svg-circle-wrap">

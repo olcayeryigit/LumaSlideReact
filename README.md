@@ -16,6 +16,7 @@
 
 - `FlatPager`
 - `Elegant`
+- `DotGlide`
 
 These reusable components are designed to enhance your UI with smooth, stylish, and high-performance transitions, providing both functionality and an engaging user experience.
 
